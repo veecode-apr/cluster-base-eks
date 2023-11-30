@@ -1,0 +1,8 @@
+site_name: "cluster-base-eks"
+site_description: "cluster-base-eks"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core

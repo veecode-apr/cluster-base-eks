@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Cluster
+metadata:
+  name: "cluster-base-eks"
+  description: "cluster-base-eks"
+  annotations:
+    github.com/project-slug: veecode-platform/cluster-base-eks
+    backstage.io/techdocs-ref: dir:.
+    veecode/cluster-name: "devportal-kubernetes"  #annotations for cluster plugin
+spec:
+  type: devops
+  lifecycle: experimental
+  owner: "group:default/admin"
+  dependsOn: ["environment:default/platform_environment"]
+  
