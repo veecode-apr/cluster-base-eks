@@ -1,4 +1,5 @@
-# cluster-base-eks
+# ec2-demo
+
 
 ## Getting started
 
