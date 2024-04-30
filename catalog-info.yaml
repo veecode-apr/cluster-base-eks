@@ -7,6 +7,9 @@ metadata:
     github.com/project-slug: veecode-platform/cluster-base-eks
     backstage.io/techdocs-ref: dir:.
     veecode/cluster-name: "devportal-kubernetes"  #annotations for cluster plugin
+    cluster/instructions: |
+      #Run the following command to get the kubeconfig for the cluster
+      doctl k8s cluster kubeconfig save vkpr-cluster-apr
 spec:
   type: devops
   lifecycle: experimental
