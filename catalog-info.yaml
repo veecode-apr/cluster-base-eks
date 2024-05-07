@@ -10,7 +10,8 @@ metadata:
     cluster/instructions: |
       doctl auth init --access-token $YOUR_DIGITALOCEAN_ACCESS_TOKEN
       doctl kubernetes cluster kubeconfig save
-      $(doctl kubernetes cluster list -o json | jq -r '.[] | select(.name=="YOUR_CLUSTER_NAME") | .id')
+      $(doctl kubernetes cluster list -o json | jq -r '.[] 
+      | select(.name=="YOUR_CLUSTER_NAME") | .id')
 spec:
   type: devops
   lifecycle: experimental
